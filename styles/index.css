@@ -1,3 +1,14 @@
-.hello-world {
-  color: seagreen;
+/* God container */
+.container {
+  display: grid;
+  grid-template-columns: minmax(200px, 20%) 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: seagreen;
+}
+
+.main-container {
+  background: coral;
 }
