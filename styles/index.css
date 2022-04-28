@@ -1,14 +1,40 @@
 /* God container */
+:root {
+  box-sizing: border-box;
+}
+
 .container {
   display: grid;
   grid-template-columns: minmax(200px, 20%) 1fr;
   min-height: 100vh;
 }
 
+/* Debugging border helper */
+.container > * {
+  border: 5px solid darkslategrey;
+}
+
 .sidebar {
   background: seagreen;
 }
 
+/* Main container section */
 .main-container {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+
   background: coral;
+}
+
+/* Debugging border helper */
+.main-container > * {
+  border: 5px solid lightslategray;
+}
+
+.header-container {
+  background: lightskyblue;
+}
+
+.main-content-container {
+  background: lightsteelblue;
 }
