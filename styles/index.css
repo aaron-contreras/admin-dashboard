@@ -67,7 +67,7 @@ p {
   background: lightskyblue;
 
   display: grid;
-  grid-template-columns: minmax(200px, 2fr) 1fr;
+  grid-template-columns: minmax(200px, 3fr) 2fr;
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
 }
@@ -88,6 +88,31 @@ p {
 .search-container input[type="search"] {
   border: none;
   border-radius: 1rem;
+}
+
+.user-actions-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.user-actions-container .notifications-icon {
+  justify-self: end;
+}
+
+.user-actions-container .user-profile-container {
+  justify-self: start;
+  
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Debugging border helper */
+.user-profile-container > * {
+  border: 5px solid black;
 }
 
 .main-content-container {
