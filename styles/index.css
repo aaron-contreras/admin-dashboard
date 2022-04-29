@@ -121,6 +121,19 @@ p {
   align-items: center;
 }
 
+.project-button-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-button-actions .btn {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+
 .main-content-container {
   background: lightsteelblue;
 }
