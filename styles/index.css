@@ -8,6 +8,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+/* Paragraph default margin reset */
+p {
+  margin: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: minmax(200px, 20%) 1fr;
@@ -57,8 +62,32 @@ h1, h2, h3, h4, h5, h6 {
   border: 5px solid lightslategray;
 }
 
+/* Header section */
 .header-container {
   background: lightskyblue;
+
+  display: grid;
+  grid-template-columns: minmax(200px, 2fr) 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Debugging border helper */
+.header-container > * {
+  border: 5px solid orange;
+}
+
+.search-container {
+  background: red;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-container input[type="search"] {
+  border: none;
+  border-radius: 1rem;
 }
 
 .main-content-container {
