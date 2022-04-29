@@ -115,6 +115,12 @@ p {
   border: 5px solid black;
 }
 
+.user-welcome-container {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+}
+
 .main-content-container {
   background: lightsteelblue;
 }
