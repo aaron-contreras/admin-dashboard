@@ -138,8 +138,11 @@ p {
   background: lightsteelblue;
   display: grid;
   grid-template-columns: 2fr 1fr; 
+  grid-template-rows: 1fr 1fr;
   gap: 1rem;
   padding: 1rem;
+
+  --item-border-radius: 10px;
 }
 
 /* Title + Content split */
@@ -172,7 +175,7 @@ p {
   grid-template-rows: 1fr 75px; 
   align-items: end;
   border-left: 10px solid black;
-  border-radius: 10px;
+  border-radius: var(--item-border-radius);
 }
 
 .main-content-container .projects-container .project-card .project-card-controls {
@@ -184,6 +187,24 @@ p {
 
 .main-content-container .announcements-container {
   background: pink;
+  display: grid;
+  gap: 1rem;
+}
+
+.main-content-container .announcements-container .announcements-list {
+  background: lightsalmon;
+  padding: 2rem;
+  border-radius: var(--item-border-radius);
+}
+
+.main-content-container .announcements-container .announcements-list .announcement {
+  background: lightgoldenrodyellow;
+  padding: 1rem 0;
+  border-bottom: 1px solid lightslategray;
+}
+
+.main-content-container .announcements-container .announcements-list .announcement:last-child {
+  border-bottom: none;
 }
 
 .main-content-container .trending-container {
