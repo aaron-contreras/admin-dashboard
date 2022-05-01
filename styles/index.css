@@ -58,17 +58,30 @@ p {
   padding: 15px;
 }
 
+.navbar {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 0.5rem;
+}
+
 .sidebar .sidebar-item {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 36px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sidebar .sidebar-item svg {
+  width: 100%;
+}
+
+.sidebar .navbar .sidebar-item svg {
+  justify-self: center;
+  width: 75%;
 }
 
 .sidebar > * {
   height: min-content;
-}
-
-.navbar ul {
-  list-style: none;
 }
 
 /* Main container section */
