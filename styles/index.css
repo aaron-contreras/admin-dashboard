@@ -1,6 +1,7 @@
 /* God container */
 :root {
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Header default margin reset */
