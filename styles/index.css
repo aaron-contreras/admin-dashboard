@@ -136,4 +136,21 @@ p {
 
 .main-content-container {
   background: lightsteelblue;
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.main-content-container .projects-container {
+  background: orange;
+  grid-row: 1 / span 2;
+}
+
+.main-content-container .announcements-container {
+  background: pink;
+}
+
+.main-content-container .trending-container {
+  background: purple;
 }
