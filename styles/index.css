@@ -142,6 +142,11 @@ p {
   padding: 1rem;
 }
 
+/* Title + Content split */
+.main-content-container > * {
+  grid-template-rows: auto 1fr;
+}
+
 /* Projects container */
 .main-content-container .projects-container {
   background: orange;
@@ -151,6 +156,11 @@ p {
   grid-template-columns: repeat(2, minmax(300px, 1fr));
   grid-auto-rows: 1fr;
   gap: 1rem;
+}
+
+.main-content-container .projects-container .section-title {
+  grid-column: span 2;
+  height: min-content;
 }
 
 .main-content-container .projects-container .project-card {
