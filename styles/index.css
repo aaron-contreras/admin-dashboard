@@ -23,7 +23,7 @@ p {
 
 .primary-bg {
   background: var(--primary-color);
-  color: var(--base-color);
+  color: var(--white-color);
 }
 
 .base-bg {
@@ -127,10 +127,20 @@ p {
   gap: 1rem;
 }
 
+.user-actions-container .user-profile-container {
+  font-weight: bold;
+}
+
 .user-welcome-container {
   display: grid;
   grid-template-columns: 50px 1fr;
   align-items: center;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.user-welcome-container .name-title {
+  font-size: 1.5rem;
 }
 
 .project-button-actions {
@@ -153,7 +163,7 @@ p {
   grid-template-columns: 2fr 1fr; 
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
 
   --item-border-radius: 10px;
 }
