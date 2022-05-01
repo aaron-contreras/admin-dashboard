@@ -109,15 +109,20 @@ p {
 
 .search-container {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 36px 1fr;
   align-items: center;
   gap: 1rem;
+}
+
+.search-container svg {
+  color: var(--dark-font-color);
+  width: 100%;
 }
 
 .search-container input[type="search"] {
   border: none;
   border-radius: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
 }
 
 .user-actions-container {
@@ -140,16 +145,24 @@ p {
   gap: 1rem;
 }
 
+.user-actions-container .user-profile-container img {
+  width: 100%;
+}
+
 .user-actions-container .user-profile-container {
   font-weight: bold;
 }
 
 .user-welcome-container {
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 75px 1fr;
   align-items: center;
   font-weight: bold;
   font-size: 0.75rem;
+}
+
+.user-welcome-container img {
+  width: 100%;
 }
 
 .user-welcome-container .name-title {
