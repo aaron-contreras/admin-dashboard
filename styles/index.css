@@ -3,8 +3,8 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 
-  --primary-color: #2F4858;
-  --highlight-color: #F26419;
+  --primary-color: #4DA167;
+  --highlight-color: #ECA400;
   --base-color: #e6e6e6;
   --white-color: white;
   
@@ -39,6 +39,11 @@ p {
 .highlight-bg {
   background: var(--highlight-color);
   color: var(--white-color);
+}
+
+.highlight-bg {
+  background: var(--highlight-color);
+  color: var(--dark-font-color);
 }
 
 .container {
