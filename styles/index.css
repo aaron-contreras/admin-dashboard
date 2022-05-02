@@ -248,12 +248,12 @@ p {
 }
 
 .main-content-container .announcements-container {
-  font-size: 0.8rem;
   display: grid;
   gap: 1rem;
 }
 
 .main-content-container .announcements-container .announcements-list {
+  font-size: 0.8rem;
   padding: 2rem;
   border-radius: var(--item-border-radius);
 }
@@ -268,13 +268,13 @@ p {
 }
 
 .main-content-container .trending-container {
-  font-size: 0.8rem;
   display: grid;
   gap: 1rem;
   grid-template-rows: auto 1fr;
 }
 
 .main-content-container .trending-container .trending-items-list {
+  font-size: 0.8rem;
   background: var(--white-color);
   padding: 1rem 1.5rem;
   display: grid;
@@ -339,6 +339,11 @@ p {
   .main-container {
     grid-template-rows: auto 1fr;
   }
+
+  .main-content-container {
+    gap: 2rem;
+  }
+
   .header-container {
     grid-template-columns: 1fr;
     padding: 2rem;
