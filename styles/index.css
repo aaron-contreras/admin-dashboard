@@ -276,6 +276,7 @@ p {
   height: min-content;
   display: grid;
   grid-template-columns: 50px 1fr;
+  gap: 0.5rem;
   grid-template-rows: auto auto;
   align-items: center;
 }
@@ -291,4 +292,12 @@ p {
 
 .main-content-container .trending-container .trending-items-list .trending-item .name {
   grid-column: 2 / span 1;
+}
+
+.trending-item img {
+  width: 100%;
+}
+
+.trending-item img.rounded {
+  border-radius: 50%;
 }
